@@ -6,8 +6,8 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 # Enable debug mode.
 DEBUG = True
 
-# Connect to the database
+# Connection to my local database
+SQLALCHEMY_DATABASE_URI = 'postgresql://myuser:mypassword@localhost:5432/fyyur'
 
-
-# TODO IMPLEMENT DATABASE URL
-SQLALCHEMY_DATABASE_URI = '<Put your local database url>'
+# Example secret key used for CSRF token protection
+SECRET_KEY = 'example-secret-key'

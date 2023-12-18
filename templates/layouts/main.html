@@ -56,24 +56,12 @@
               {% if (request.endpoint == 'venues') or
                 (request.endpoint == 'search_venues') or
                 (request.endpoint == 'show_venue') %}
-              <form class="search" method="post" action="/venues/search">
-                <input class="form-control"
-                  type="search"
-                  name="search_term"
-                  placeholder="Find a venue"
-                  aria-label="Search">
-              </form>
+                {% include 'forms/_search_venue_form.html' %}
               {% endif %}
               {% if (request.endpoint == 'artists') or
                 (request.endpoint == 'search_artists') or
                 (request.endpoint == 'show_artist') %}
-              <form class="search" method="post" action="/artists/search">
-                <input class="form-control"
-                  type="search"
-                  name="search_term"
-                  placeholder="Find an artist"
-                  aria-label="Search">
-              </form>
+                {% include 'forms/_search_artist_form.html' %}
               {% endif %}
             </li>
           </ul>

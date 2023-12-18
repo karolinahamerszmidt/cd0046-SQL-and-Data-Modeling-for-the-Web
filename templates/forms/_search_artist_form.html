@@ -1,0 +1,4 @@
+<form class="search" method="post" action="/artists/search">
+  {{ search_form.csrf_token }}
+  {{ search_form.search_term(class_ = 'form-control', placeholder='Find an artist', aria_label='Search', type='search') }}
+</form>

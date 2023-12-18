@@ -1,0 +1,4 @@
+<form class="search" method="post" action="/venues/search">
+  {{ search_form.csrf_token }}
+  {{ search_form.search_term(class_ = 'form-control', placeholder='Find a venue', aria_label='Search', type='search') }}
+</form>
