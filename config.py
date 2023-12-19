@@ -11,3 +11,7 @@ SQLALCHEMY_DATABASE_URI = 'postgresql://myuser:mypassword@localhost:5432/fyyur'
 
 # Example secret key used for CSRF token protection
 SECRET_KEY = 'example-secret-key'
+
+SQLALCHEMY_ECHO = True
+
+SQLALCHEMY_TRACK_MODIFICATIONS = False
